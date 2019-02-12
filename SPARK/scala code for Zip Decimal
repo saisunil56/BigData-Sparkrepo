@@ -1,0 +1,28 @@
+ object decimal_zip {
+      def solution(A: Int, B: Int): Int = { //Write your code in Java SE 8 here
+        var AA = A + ""
+        var BB = B + ""
+        var C = ""
+        var result = 0
+        var v = true
+        while ( {
+          v == true
+        }) if (AA.length > 0 || BB.length > 0) {
+          if (AA.length > 0) {
+            C = C + AA.charAt(0)
+            AA = AA.substring(1, AA.length)
+          }
+          if (BB.length > 0) {
+            C = C + BB.charAt(0)
+            BB = BB.substring(1, BB.length)
+          }
+          else v = false
+        }
+        result = C.toInt
+        result
+      }
+
+      def main(args: Array[String]): Unit = {
+        System.out.println("Result" + solution(12345, 678))
+      }
+    }
